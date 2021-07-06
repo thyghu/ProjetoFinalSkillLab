@@ -1,0 +1,419 @@
+
+    * {
+		box-sizing: border-box;
+	  }
+  
+	  .slider {
+		  width: 50%;
+		  margin: 100px auto;
+	  }
+  
+	  .slick-slide {
+		margin: 0px 20px;
+	  }
+  
+	  .slick-slide img {
+		width: 100%;
+	  }
+  
+	  .slick-prev:before,
+	  .slick-next:before {
+		color: black;
+	  }
+  
+  
+	  .slick-slide {
+		transition: all ease-in-out .3s;
+		opacity: .2;
+	  }
+	  
+	  .slick-active {
+		opacity: .5;
+	  }
+  
+	  .slick-current {
+		opacity: 1;
+	  }
+
+body {
+	margin: auto;
+	font-family: helvetica;
+	font-size: 1.5em;
+	z-index: 1;
+	text-align: justify;
+}
+
+
+
+#video{
+	text-align: center;
+}
+#carta{
+	background-image: url("../Imagens/carta.png");
+	background-size:200px 200px;
+	
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+}
+
+
+
+#casa{
+	background-image: url("../Imagens/casa.png");
+	background-size:200px 200px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+}
+#carteira{
+	background-image: url("../Imagens/carteira.png");
+	background-size:200px 200px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+}
+#usuario{
+	background-image: url("../Imagens/usuario.png");
+	background-size:200px 200px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	
+}
+
+
+
+
+
+a { 
+	color: White;
+	font-weight: bold;
+	font-family: "Verdana";
+	font-style: none;
+	text-decoration: unset;
+}
+
+section{
+	margin: 10px;
+
+	
+}
+#sideBox{
+	padding: 5px;
+	background-color: silver;
+}
+article{
+	
+}
+.secao{
+	background-color:#4a4f4b;
+	color: white;
+	padding: 2px;
+	font-size: 1.1em;
+	
+}
+
+#foto1
+{
+	width: 350px;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#mensagem{
+	
+	width: 170px;
+	height: 100px;
+
+}
+
+
+input{
+	height: 30px;
+}
+
+
+fieldset{
+	
+	line-height: 40px;
+	margin: auto;
+	
+		
+}
+	
+
+#formulario{
+	margin: auto;
+	
+	align-items: center;
+	justify-content: center;
+	
+	line-height: 2;
+	
+}
+#ffieldset{
+	
+}
+
+#Tabela{
+	border-collapse: collapse;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border: 0px;
+	
+}
+#Tabela td{
+	border: 1px solid grey;
+	text-align: center;
+}
+#Tabela th{
+	background-color: grey;
+	color: white;
+	border: 1px solid grey;
+	text-align: right;
+}
+
+
+
+#imagens{	
+
+	padding: 0 250px;
+	width: 150px;
+	height: 100px;
+
+}
+
+
+h1{
+	font-size:1.9em;
+	font-family: MS Sans;
+	color: #252926;
+}
+
+h2{
+	font-size:1.2em;
+	color: #1b241d;
+	font-family: Arial;
+}
+
+
+p {
+	margin: 20px;
+}
+
+footer {
+	font-family: verdana;
+	padding: 25px 0;
+	text-align: center;
+	color: white;
+	background-color: #191b24;
+	height: 50x;	
+}
+
+#botao {
+	background-color: rgb(0, 162, 255);
+	text-align: center;
+	font-size: 1.1em;
+	color: white;
+	font-weight: bold;
+	
+	height: 60px;
+	width: 100px;
+	padding: 10px;
+	border-width: 2px;
+	border-bottom-style: solid;
+	border-color: #0b324d;		
+}
+
+#botao:hover
+{
+	
+	border-color: white;
+	-moz-box-shadow:0 3px 10px 0 #CCC;
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	text-shadow:0px 0px 5px #fff;
+	
+}
+
+#botaoBox {
+	text-align: center;
+	margin: auto;
+}
+
+#objeto {
+	margin: auto;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	position: relative;
+	animation-name: example;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;	
+}
+
+@keyframes example {
+	0% {background-color:black; transform: rotate(0) }   
+	25% {background-color:red; transform: rotate(90deg)}
+	50% {background-color:blue; transform: rotate(180deg)}
+	75% {background-color:purple; transform: rotate(270deg)}
+	100% {background-color:brown; transform: rotate(360deg)}	
+}
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 200px) {
+    
+	#imagens{
+		display: none;
+	}
+	#foto1{
+		
+		width: 160px;
+		height: 100px;
+		
+	}
+	iframe{
+		width: 200px;
+		height: 150px;
+	}
+	
+	fieldset{
+		width: 100%;
+	}
+	
+  }
+
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+  @media screen and (min-width: 328px) {
+    
+	#imagens{
+		display: none;
+	}
+	#foto1{
+		
+		width: 300px;
+		height: 180px;
+		
+	}
+	iframe{
+		width: 300px;
+		height: 200px;
+	}
+	
+	fieldset{
+		width: 90%;
+	}
+	
+  }
+  
+
+/* 
+ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+  @media screen and (min-width: 768px) {
+    
+	#imagens{
+		display: none;
+
+	}
+	fieldset{
+		width: 80%;
+	}
+	#foto1{
+		
+		width: 400px;
+		height: 250px;
+		
+	}
+	iframe{
+		width: 450px;
+		height: 300px;
+	}
+  }
+  
+  /* 
+   Com uma largura mínima de 992 pixels. Monitores por exemplo.
+  */
+  @media screen and (min-width: 992px) {
+	
+	.linha{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.coluna1{
+		width: 50%;
+	}
+	.coluna2{
+		width: 50%;
+	}
+	section{
+		
+		width: 900px;
+		margin: auto;
+	}
+	fieldset{
+			width: 70%;
+		
+		
+	}
+	#foto1{
+		
+		width: 400px;
+		height: 250px;
+		
+	}
+	iframe{
+		width: 400px;
+		height: 250px;
+	}
+  }
+  
+  /* 
+   Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+ */
+  @media screen and (min-width: 1200px) {
+	.linha{
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.coluna1{
+		width: 50%;
+	}
+	.coluna2{
+		width: 50%;
+	}
+	section{
+		
+		width: 900px;
+		margin: auto;
+	}
+	fieldset{
+
+			width: 60%;
+	}
+	#foto1{
+
+		
+		width: 420px;
+		height: 270px;
+		
+	}	
+		
+	iframe{
+		width: 400px;
+		height: 250px;
+	}
+    #imagens{
+		display: block;
+	}
+  }
